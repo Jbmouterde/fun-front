@@ -32,21 +32,21 @@ export class HomeComponent implements OnInit {
       console.log(err)
     })
 
-    this.apiTruc.getNumber()
-    // .then((result : News[])=>{
-      .then((test : any)=>{
-        console.log('chiffres result' ,test)
-        // this.news.push(test.chiffre)
-      console.log("r", test)
-      this.chiffres = test
-      // console.log(result)
-    })
-    .catch((err)=>{
-      console.log("chiffres list error")
-      console.log("http://numbersapi.com/42")
-      console.log('chiffres result')
-      // this.news.push(test.chiffre)
-    console.log("r", this.chiffres)
-      console.log(err)
-    })
+    // this.apiTruc.getNumber()
+    // // .then((result : News[])=>{
+    //   .then((test : any)=>{
+    //     console.log('chiffres result' ,test)
+    //     // this.news.push(test.chiffre)
+    //   console.log("r", test)
+    //   this.chiffres = test
+    //   // console.log(result)
+    // })
+    // .catch((err)=>{
+    //   console.log("chiffres list error")
+    //   console.log("http://numbersapi.com/42")
+    //   console.log('chiffres result')
+    //   // this.news.push(test.chiffre)
+    // console.log("r", this.chiffres)
+    //   console.log(err)
+    // })
   }}
