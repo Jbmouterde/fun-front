@@ -1,0 +1,51 @@
+
+
+html{
+    background-color: grey;
+  
+  }
+  
+  
+
+
+  ul {
+		margin: 30px auto;
+		text-align: center;
+	}
+
+	li {
+		list-style: none;
+		position: relative;
+		display: inline-block;
+		width: 100px;
+    height: 100px;
+    font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
+    text-transform: uppercase;
+    color : black;
+    list-style-type: none;
+  }
+  
+  body > app-root > header > nav > ul > li:nth-child(1) > a{
+    list-style-type: none;
+    text-decoration: none;
+    color : black
+  }
+
+  body > app-root > header > nav > ul > li:nth-child(2) > a{
+    list-style-type: none;
+    text-decoration: none;
+    color : black
+
+  }
+
+  body > app-root > header > nav > ul > li:nth-child(3) > a{
+    list-style-type: none;
+    text-decoration: none;
+    color : black   
+  }
+
+  body > app-root > header > nav > ul > li:nth-child(4) > a{
+    list-style-type: none;
+    text-decoration: none;
+    color : black   
+  }

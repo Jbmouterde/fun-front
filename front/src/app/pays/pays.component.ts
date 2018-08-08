@@ -1,0 +1,37 @@
+import { Component, OnInit } from '@angular/core';
+import { TestService, Advice } from '../api/test.service';
+import { Router } from '@angular/router';
+
+
+@Component({
+  selector: 'app-pays',
+  templateUrl: './pays.component.html',
+  styleUrls: ['./pays.component.css']
+})
+export class PaysComponent implements OnInit {
+  country : Array<Advice> = []
+
+
+  constructor(
+    public apiTruc : TestService,
+    private router: Router,
+  ) { }
+
+  ngOnInit() {
+    this.apiTruc.getCountry()
+    // .then((result : News[])=>{
+      .then((result : any)=>{
+        console.log('advice result' ,result.slip.advice)
+        // this.news.push(result.articles)
+      // console.log(result)
+      this.country = result.slip.advice
+        console.log(this.country)
+      // console.log(result)
+    })
+    .catch((err)=>{
+      console.log("News list error")
+      console.log(err)
+    })
+  }
+
+}
