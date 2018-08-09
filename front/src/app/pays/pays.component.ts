@@ -9,9 +9,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./pays.component.css']
 })
 export class PaysComponent implements OnInit {
-  country : Array<Advice> = []
-
-
+  country : Array<Advice> = [];
+  test = Math.floor(Math.random()*100);
+  capital : Array<Advice> = [];
+  population : Array<Advice>= [];
   constructor(
     public apiTruc : TestService,
     private router: Router,
@@ -21,11 +22,12 @@ export class PaysComponent implements OnInit {
     this.apiTruc.getCountry()
     // .then((result : News[])=>{
       .then((result : any)=>{
-        console.log('advice result' ,result.slip.advice)
+        console.log('advice result' ,result[0])
         // this.news.push(result.articles)
       // console.log(result)
-      this.country = result.slip.advice
-        console.log(this.country)
+      this.country = result[this.test].name
+      this.capital = result[this.test].capital
+      this.population = result[this.test].population
       // console.log(result)
     })
     .catch((err)=>{

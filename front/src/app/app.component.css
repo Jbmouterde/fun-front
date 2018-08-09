@@ -1,0 +1,27 @@
+h1 {
+  font-size: 1.5rem;
+}
+
+footer {
+  display: flex;
+  padding: 10px 5px;
+  /* background-color: #E8E8E8; */
+  color: #3A474D;
+}
+
+footer p {
+  flex: 1;
+  margin: 0;
+
+}
+
+footer ul {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+body {position: relative;}
+footer {position: absolute; bottom: 0;}

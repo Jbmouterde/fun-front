@@ -179,3 +179,11 @@ span{
       0px 8px rgba(78,78,78,1),
       0px 14px 6px -1px rgba(128,128,128,1); /* shadow */
 }
+#country > p > a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #3A474D;
+}
+#country > p > a:hover {
+    color : blue
+}

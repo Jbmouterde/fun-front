@@ -9,8 +9,8 @@ html{
 
 
   ul {
-		margin: 30px auto;
-		text-align: center;
+		/* margin: 30px auto; */
+        text-align: center;
 	}
 
 	li {
@@ -18,11 +18,14 @@ html{
 		position: relative;
 		display: inline-block;
 		width: 100px;
-    height: 100px;
+    /* height: 100px; */
     font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
     text-transform: uppercase;
     color : black;
     list-style-type: none;
+    background-color: #E8E8E8;
+    border-radius : 10px; 
+
   }
   
   body > app-root > header > nav > ul > li:nth-child(1) > a{
@@ -45,6 +48,26 @@ html{
   }
 
   body > app-root > header > nav > ul > li:nth-child(4) > a{
+    list-style-type: none;
+    text-decoration: none;
+    color : black   
+  }
+
+  body > app-root > header > nav > ul > li:nth-child(5) > a{
+    list-style-type: none;
+    text-decoration: none;
+    color : black   
+  }
+
+
+  body > app-root > header > nav > ul > li:nth-child(6) > a {
+    list-style-type: none;
+    text-decoration: none;
+    color : black   
+  }
+
+
+  body > app-root > header > nav > ul > li:nth-child(7) > a{
     list-style-type: none;
     text-decoration: none;
     color : black   
